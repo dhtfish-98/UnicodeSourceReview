@@ -1,0 +1,11 @@
+UnicodeSourceReview
+
+Technical references: eslint-community/eslint-plugin-security,
+commit d1ba1cd7365925dd01606a22e4d9bcdcf7f1d8fd.
+Copyright 2015 &yet, LLC. Apache License 2.0.
+Rule credits preserved: Luciamo Mammino (upstream spelling), Simone Sanfratello,
+Liran Tal, and electrohyun; Node Security Project and ESLint community maintainers.
+
+This project uses a newly written Python implementation of the selected defensive
+scope, assisted by Codex under repository-owner direction. It is not a full
+upstream plugin rewrite or a claim of independent authorship of upstream work.
