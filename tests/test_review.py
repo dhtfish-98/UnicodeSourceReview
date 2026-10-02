@@ -4,12 +4,15 @@ import io
 import json
 import os
 from pathlib import Path
+import subprocess
+import sys
 import tempfile
 import unittest
 
 from unicode_source_review import Limits, read_regular_file, review_bytes
 from unicode_source_review.cli import main
 from unicode_source_review.input import InputError
+import unicode_source_review
 
 
 class SourceEvidenceTests(unittest.TestCase):
@@ -171,6 +174,40 @@ class InputAndCommandTests(unittest.TestCase):
             code = main([str(self.root / "private_path_missing")])
         self.assertEqual(code, 2)
         self.assertNotIn("private_path_missing", output.getvalue())
+
+    def command(self, args):
+        environment = dict(os.environ, PYTHONPATH=str(Path(unicode_source_review.__file__).parent.parent))
+        return subprocess.run([sys.executable, "-m", "unicode_source_review", *args],
+                              cwd=self.root, env=environment, capture_output=True, check=False)
+
+    def test_process_invalid_arguments_are_private_ascii_open(self):
+        private = "PRIVATE_ARGUMENT_" + chr(0x202E)
+        for args in ([], ["--" + private], [private, "--" + private], [private, private], [private, "--version=" + private]):
+            with self.subTest(argument_count=len(args)):
+                completed = self.command(args)
+                self.assertEqual(completed.returncode, 2)
+                self.assertEqual(completed.stderr, b"")
+                self.assertTrue(completed.stdout.isascii())
+                self.assertNotIn(private.encode(), completed.stdout)
+                self.assertNotIn(b"PRIVATE_ARGUMENT_", completed.stdout)
+                report = json.loads(completed.stdout)
+                self.assertEqual(report["status"], "OPEN")
+                self.assertFalse(report["complete"])
+                self.assertEqual(report["errors"][0]["code"], "invalid_arguments")
+
+    def test_process_help_version_and_normal_exits(self):
+        for argument in ("--help", "--version"):
+            completed = self.command([argument])
+            self.assertEqual(completed.returncode, 0)
+            self.assertEqual(completed.stderr, b"")
+            self.assertTrue(completed.stdout.isascii())
+        self.assertEqual(self.command(["--version"]).stdout.strip(), b"1.0.1")
+        for data, expected in ((b"plain", 0), (chr(0x200E).encode(), 1), (b"\xff", 2)):
+            self.file.write_bytes(data)
+            completed = self.command([str(self.file)])
+            self.assertEqual(completed.returncode, expected)
+            self.assertEqual(completed.stderr, b"")
+            self.assertTrue(completed.stdout.isascii())
 
 
 if __name__ == "__main__":

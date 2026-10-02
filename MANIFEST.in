@@ -1,0 +1,3 @@
+include .gitignore LICENSE NOTICE README.md ORIGIN.md DEFENSIVE_SCOPE.md VALIDATION.md SOURCE_REVIEW_MANIFEST.json
+recursive-include tests *.py
+recursive-include .github *.yml

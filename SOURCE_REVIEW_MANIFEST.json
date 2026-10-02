@@ -1,0 +1,127 @@
+{
+  "schema": "source-review-manifest/v1",
+  "project": "UnicodeSourceReview",
+  "version": "1.0.1",
+  "date": "2026-10-03",
+  "baseline_head": "b07b532afc19f0a3e75e0ba3b0616d67ae6e25ab",
+  "review_scope": "Current new runtime, all tests, CLI/input contracts, package/lock/build/CI and public scope/provenance documents. Existing fixed upstream/dependency read scopes are retained separately; no complete upstream or dependency audit is claimed.",
+  "self_hash_excluded": true,
+  "historical_evidence_is_current_source_validation": false,
+  "current_revision_hosted_ci": "OPEN",
+  "real_cvp_eligibility_approval": "OPEN",
+  "cross_platform_runtime": "OPEN",
+  "files": [
+    {
+      "path": ".github/workflows/verify.yml",
+      "bytes": 672,
+      "sha256": "6794ec5ff4727db018699edb20134ae4dde3602d3eb43571af7254c797fc5eb6",
+      "lines": 20,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 51,
+      "sha256": "523edf5955737e86f6826648d0e3b7cf4b1ad9abc98eaf7c349191d43567fe58",
+      "lines": 6,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "DEFENSIVE_SCOPE.md",
+      "bytes": 845,
+      "sha256": "2d9d3536ac65cc201824705324e8ff96d161b8ced66d06a3207aee50a7c58e6a",
+      "lines": 7,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 11340,
+      "sha256": "200abd58b0889d0c552492114ea77f5d0f46662afac08f911f2eb7b0793d8e0d",
+      "lines": 202,
+      "read_scope": "unchanged_full_license_byte_identity_and_attribution"
+    },
+    {
+      "path": "MANIFEST.in",
+      "bytes": 176,
+      "sha256": "828edda538b29bdf6a50fefb4bae06a9ed75f5746b5053b9c9d1936d8342035c",
+      "lines": 3,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "NOTICE",
+      "bytes": 582,
+      "sha256": "6c2b0abb4d16e1343ecd4fbc7558d73aeaaa2d2b8eb5e782afae776fe3606884",
+      "lines": 11,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "ORIGIN.md",
+      "bytes": 1325,
+      "sha256": "af770912121fd3c4823bd97145f975fc01dd0865663335c9d74ce64beba85d08",
+      "lines": 9,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2367,
+      "sha256": "f2ab38ac0e12cf7217ad5694c056eb92e9669e1fc237d0b3093c83faf8821bd3",
+      "lines": 21,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 3038,
+      "sha256": "91ca8d574666770ec264fd4cfafc3a2f23446291012a5c97f015f956ea04b846",
+      "lines": 27,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 631,
+      "sha256": "569d78ab8214228bc98a49371ff65b0d30bac71bcfb77a7744c5927238239a38",
+      "lines": 22,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "src/unicode_source_review/__init__.py",
+      "bytes": 245,
+      "sha256": "4ef957a9ecceffe1bcf69fa66bea25662ffc621bef62f0e251b8d0a2904c1e02",
+      "lines": 7,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "src/unicode_source_review/__main__.py",
+      "bytes": 48,
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "lines": 3,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "src/unicode_source_review/analysis.py",
+      "bytes": 4824,
+      "sha256": "3bf72776ffe132753831d72cb23e34325f3744132f505b795d86f088e88727f6",
+      "lines": 108,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "src/unicode_source_review/cli.py",
+      "bytes": 1558,
+      "sha256": "cfacc3951d625a4d521aa7be62b92d55d016368964be472c7ecd87b137e037c6",
+      "lines": 33,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "src/unicode_source_review/input.py",
+      "bytes": 2595,
+      "sha256": "b4b5909de905dd54b35a9ec3c5be87e081c8ad1539eb7616ac8fb5a76def0d85",
+      "lines": 61,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "tests/test_review.py",
+      "bytes": 9995,
+      "sha256": "4acfe366869e52098c59a72a319fbb79000f5676165c923dcdb3e9e101ca6129",
+      "lines": 214,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    }
+  ]
+}

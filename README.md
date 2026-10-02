@@ -7,7 +7,10 @@ python -m pip install .
 unicode-source-review path/to/source.txt
 ```
 
-Output is ASCII-escaped JSON. Exit 0 means no selected physical characters were observed in a complete review; 1 means reviewer attention is required; 2 means input or analysis is incomplete. None of these establish whether a program is malicious, exploitable or safe.
+Output is ASCII-escaped JSON. Exit 0 means no selected physical characters were observed in a complete review; 1 means reviewer attention is required; 2 means input or analysis is incomplete. Invalid or missing command arguments return fixed ASCII JSON OPEN and exit 2
+without echoing paths, argument values or control characters on either output
+stream. `--help` prints ordinary help and `--version` prints the tool version.
+None of these establish whether a program is malicious, exploitable or safe.
 
 Locations use zero-based UTF-8 byte offsets and one-based lines and codepoint columns, including an initial BOM. Columns are neither editor UTF-16 positions nor grapheme/display widths. CRLF is one line break; CR, LF, U+2028 and U+2029 also advance a line. A literal ASCII backslash-u escape is not a physical Unicode control.
 
