@@ -201,7 +201,7 @@ class InputAndCommandTests(unittest.TestCase):
             self.assertEqual(completed.returncode, 0)
             self.assertEqual(completed.stderr, b"")
             self.assertTrue(completed.stdout.isascii())
-        self.assertEqual(self.command(["--version"]).stdout.strip(), b"1.0.2")
+        self.assertEqual(self.command(["--version"]).stdout.strip(), b"1.0.3")
         for data, expected in ((b"plain", 0), (chr(0x200E).encode(), 1), (b"\xff", 2)):
             self.file.write_bytes(data)
             completed = self.command([str(self.file)])

@@ -1,7 +1,7 @@
 # UnicodeSourceReview
 
 
-New implementation author: **dhtfish98**. Current project version: **1.0.2**.
+New implementation author: **dhtfish98**. Current project version: **1.0.3**.
 
 Offline evidence for reviewing physical Unicode direction controls and two selected invisible Hangul characters in a local UTF-8 source file. It reports locations and control-scope diagnostics without executing, importing, editing, or printing the source. Ordinary Chinese, Japanese, combining marks and emoji are supported as text.
 

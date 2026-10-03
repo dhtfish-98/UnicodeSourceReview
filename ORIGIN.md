@@ -9,3 +9,7 @@ This new Python implementation was authored by dhtfish98 at the repository owner
 The upstream algorithms and history remain their authors' work. Applicant contributions, identity, organization and any real safeguards impact must be substantiated separately; no CVE, upstream discovery or CVP approval is claimed.
 
 New implementation author: dhtfish98. This attribution applies to the new project implementation; original sources, licenses and third-party notices retain their authors. Automated checks do not establish independent human review or CVP eligibility.
+
+## Current distribution and reference boundary
+
+New Python scanner is distributed. The selected character repertoire is explicitly reference-derived; original copyright and license remain while its specific applicability is OPEN. No ESLint runtime is bundled. New implementation author and maintainer: dhtfish98. Source identities and bounded research facts above remain provenance, not an assertion that those authors wrote or endorsed the new runtime.

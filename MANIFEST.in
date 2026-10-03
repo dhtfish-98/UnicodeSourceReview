@@ -18,5 +18,5 @@ include src/unicode_source_review/__main__.py
 include src/unicode_source_review/analysis.py
 include src/unicode_source_review/cli.py
 include src/unicode_source_review/input.py
-include tests/test_review.py
 include tests/test_reader_capabilities.py
+include tests/test_review.py

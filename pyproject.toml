@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 authors = [{name = "dhtfish98"}]
 maintainers = [{name = "dhtfish98"}]
 name = "unicode-source-review"
-version = "1.0.2"
+version = "1.0.3"
 description = "Offline, bounded Unicode control-character evidence for source review"
 requires-python = ">=3.11"
 license = "Apache-2.0"
