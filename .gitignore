@@ -4,3 +4,10 @@ __pycache__/
 .venv/
 dist/
 build/
+
+# All generated build outputs and staging are local.
+!/Build/
+/Build/*
+!/Build/.gitignore
+__pycache__/
+*.py[cod]

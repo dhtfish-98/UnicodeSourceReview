@@ -10,8 +10,8 @@ version = "1.0.3"
 description = "Offline, bounded Unicode control-character evidence for source review"
 requires-python = ">=3.11"
 license = "Apache-2.0"
-license-files = ["LICENSE", "NOTICE"]
-readme = "README.md"
+license-files = ["项目文档/LICENSE", "项目文档/NOTICE"]
+readme = "项目文档/README.md"
 dependencies = []
 
 [project.scripts]
@@ -21,4 +21,4 @@ unicode-source-review = "unicode_source_review.cli:main"
 where = ["src"]
 
 [tool.setuptools.data-files]
-"share/doc/UnicodeSourceReview" = ["ORIGIN.md", "DEFENSIVE_SCOPE.md", "VALIDATION.md", "SOURCE_REVIEW_MANIFEST.json"]
+"share/doc/UnicodeSourceReview" = ["项目文档/ORIGIN.md", "项目文档/DEFENSIVE_SCOPE.md", "项目文档/VALIDATION.md", "SOURCE_REVIEW_MANIFEST.json"]
