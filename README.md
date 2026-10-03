@@ -1,5 +1,8 @@
 # UnicodeSourceReview
 
+
+New implementation author: **dhtfish98**. Current project version: **1.0.2**.
+
 Offline evidence for reviewing physical Unicode direction controls and two selected invisible Hangul characters in a local UTF-8 source file. It reports locations and control-scope diagnostics without executing, importing, editing, or printing the source. Ordinary Chinese, Japanese, combining marks and emoji are supported as text.
 
 ```sh
@@ -19,3 +22,5 @@ The selected repertoire is U+061C, U+200E–U+200F, U+202A–U+202E, U+2066–U+
 The input reader requires POSIX descriptors and rejects symbolic links in every path component and non-regular files. Paths containing a parent (`..`) component are refused before normalization, so a link followed by `..` cannot silently select different bytes. Defaults bound input to 8 MiB, analysis to 2,097,152 codepoints, output to 4,096 records and open control scopes to 128. Limits return OPEN, retaining already observed evidence. File metadata changes during reading are rejected; the report identifies the bytes read by SHA-256, without claiming an adversarial writer cannot evade metadata observations.
 
 See ORIGIN.md for attribution, DEFENSIVE_SCOPE.md for capability boundaries and VALIDATION.md for measured checks.
+
+Local-file capability boundary: required OS flags must be exact positive integers. Descriptor walking also requires declared `os.open` directory-relative support. Missing, null, zero, boolean or otherwise invalid required capabilities return a controlled OPEN result before file access. Native Windows local-file reading is outside this POSIX profile.

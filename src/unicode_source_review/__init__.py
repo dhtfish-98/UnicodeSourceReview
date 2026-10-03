@@ -1,5 +1,5 @@
 """Evidence about selected physical Unicode characters, never source execution."""
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 
 from .analysis import Limits, review_bytes
 from .input import read_regular_file
