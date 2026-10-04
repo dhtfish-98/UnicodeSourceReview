@@ -11,19 +11,25 @@
       "path": ".github/workflows/verify.yml",
       "sha256": "90070ed1d8acb61e2ae3a520bd1772b7a5b0596ac69db39419203583ee91fb6e",
       "bytes": 1993,
-      "lines": 20
+      "lines": 44
     },
     {
       "path": ".gitignore",
       "sha256": "6656e21449f78d4329c64a3d3456e9caff750dd107fd73a6f3720094f4542fd0",
       "bytes": 165,
-      "lines": 6
+      "lines": 13
+    },
+    {
+      "path": "Build/.gitignore",
+      "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d",
+      "bytes": 14,
+      "lines": 2
     },
     {
       "path": "MANIFEST.in",
       "sha256": "1a3080e250a5ffc58bfea83a01e4e1ea6766048933109d644fe1e2693ae72599",
       "bytes": 1407,
-      "lines": 22
+      "lines": 37
     },
     {
       "path": "pyproject.toml",
@@ -74,14 +80,16 @@
       "lines": 214
     },
     {
+      "path": "构建.py",
       "sha256": "248c7594ad67a2d9380273b1dd68986253a2d9bac75595f1f6e3647720335c8e",
       "bytes": 6787,
-      "path": "构建.py"
+      "lines": 129
     },
     {
+      "path": "构建配置.json",
       "sha256": "ec08c20d29ea3cf9c30238faa9ff22ba5d2dd190bc9002f5be4475d2ebec7c07",
       "bytes": 1274,
-      "path": "构建配置.json"
+      "lines": 40
     },
     {
       "path": "项目文档/DEFENSIVE_SCOPE.md",
@@ -111,7 +119,7 @@
       "path": "项目文档/README.md",
       "sha256": "c8b49daaf1c062b9f5808bf0de82cd575f260e2955842de45d8bb3c14f1dc6df",
       "bytes": 3155,
-      "lines": 26
+      "lines": 28
     },
     {
       "path": "项目文档/VALIDATION.md",
@@ -120,14 +128,16 @@
       "lines": 53
     },
     {
+      "path": "项目文档/历史/目录更新20261003/SOURCE_REVIEW_MANIFEST.json.public-8b615902d014.json",
       "sha256": "1d5c7edf93f35af3405015b7722366e030b4916454f9b303ab427d66cc4df11e",
       "bytes": 3613,
-      "path": "项目文档/历史/目录更新20261003/SOURCE_REVIEW_MANIFEST.json.public-8b615902d014.json"
+      "lines": 115
     },
     {
       "path": "项目文档/目录与构建.md",
       "sha256": "3f7599e7a43cd47108377905ec46e6894317d8e574e3f865157e9fc9bc6d7c72",
-      "bytes": 816
+      "bytes": 816,
+      "lines": 7
     }
   ],
   "manifest_self_digest": "excluded",
