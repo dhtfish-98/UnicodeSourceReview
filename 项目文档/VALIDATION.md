@@ -1,3 +1,5 @@
+> Historical validation for v1.0.3. Current release v1.0.4 is validated separately by its exact-commit CI and published artifacts.
+
 # Current delivery validation — 1.0.3
 
 New implementation author and maintainer: dhtfish98. This patch removes only source-reference or unbundled-dependency notice copies identified as unused. Licenses/notices associated with redistributed material and specific OPEN applicability questions are retained byte-for-byte. The new own runtime differs only in version metadata; parser and policy behavior are unchanged.

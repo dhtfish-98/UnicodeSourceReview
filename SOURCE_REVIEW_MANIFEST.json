@@ -1,7 +1,7 @@
 {
   "schema": "current-formal-source-manifest/v1",
   "project": "UnicodeSourceReview",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "new_implementation_author": "dhtfish98",
   "new_implementation_maintainer": "dhtfish98",
   "baseline_commit": "af2eee9c0f1c73d7b33ca8c83dde849930eeb824",
@@ -33,13 +33,13 @@
     },
     {
       "path": "pyproject.toml",
-      "sha256": "d305a7e9fda10cf3bb5a9df119e8366471b07f010c6594376967bdb0f1ddb3bd",
+      "sha256": "745f949cbffd1eb97b7e7fef1fed4b1210f73ead8e1b59f4ab21493f400973b3",
       "bytes": 779,
       "lines": 24
     },
     {
       "path": "src/unicode_source_review/__init__.py",
-      "sha256": "b2b70796df2058ca3cddd305c60ab1523f9d4c045ef2d88b585499b767ac67b2",
+      "sha256": "8f8ae80c3030cebdae9913701d871b3e7b4d65d3dc3327541be54b1b6a6f1899",
       "bytes": 245,
       "lines": 7
     },
@@ -75,7 +75,7 @@
     },
     {
       "path": "tests/test_review.py",
-      "sha256": "53ffd730c1df2aac0e23945001712157fd4f8824838253e51fac2b8a26039b07",
+      "sha256": "f3c1f63bf575c4e8863c50eae9135a7d10c3d8fd618f2f4c8f1f6de7c905530e",
       "bytes": 9995,
       "lines": 214
     },
@@ -87,7 +87,7 @@
     },
     {
       "path": "构建配置.json",
-      "sha256": "ec08c20d29ea3cf9c30238faa9ff22ba5d2dd190bc9002f5be4475d2ebec7c07",
+      "sha256": "138a78db28146c99fc1e329000b22b7b870555b986e10a4c3aa4d7c9520f4a4a",
       "bytes": 1274,
       "lines": 40
     },
@@ -117,15 +117,15 @@
     },
     {
       "path": "项目文档/README.md",
-      "sha256": "c8b49daaf1c062b9f5808bf0de82cd575f260e2955842de45d8bb3c14f1dc6df",
+      "sha256": "243213a884e5acaee2655bc129c801afeae734a0b19747a8a6ec2a58e6f0b26f",
       "bytes": 3155,
       "lines": 28
     },
     {
       "path": "项目文档/VALIDATION.md",
-      "sha256": "5ba69a14bb4df01a194d9e6b221be3b1e947596ef260d2ebea84d72e02443ecd",
-      "bytes": 5505,
-      "lines": 53
+      "sha256": "7eb0ce659ffefc56111e2dde6b57db8ed7aba0170c4585f4fdef67a2ed03ca98",
+      "bytes": 5637,
+      "lines": 55
     },
     {
       "path": "项目文档/历史/目录更新20261003/SOURCE_REVIEW_MANIFEST.json.public-8b615902d014.json",
